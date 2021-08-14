@@ -2,16 +2,15 @@
 --main-text-color: #757575;
 --secondary-text-color: #212121;
 --accent-link-color: #2196F3;
---accent-button-color: #FFFFFF;
---main-bg-color: #E5E5E5;
+--main-bg-color: #FFFFFF;
 --secondary-bg-color: #F5F4FA;
 --hero-footer-bg-color: #2F303A;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: var(--main-bg-color);
 	color: var(--main-color);
+	background-color: var(--main-bg-color);
 }
 
 .list {
@@ -22,36 +21,33 @@ body {
 	text-decoration: none;
 }
 
-/* -------Header------- */
-.header {
-	background-color: #FFFFFF;
+.header-link.active-page {
+	color: var(--accent-link-color);
 }
 
-.header-logo {
-	font-family: Raleway;
+/* -------Header------- */
+.logo {
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
-	color: #2196F3;
-}
 
-.header-logo-studio {
 	color: #000000;
 }
 
-/* !   Не работает ховер и фокус */
-.header-logo:hover,
-.header-logo:focus {
-	color: var(--accent-link-color);
+.logo .accent {
+	color: #2196F3;
 }
 
-.header-link {
+.header-link,
+.header-contacts-link {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: #212121;	
+
+	color: #212121;
 }
 
 .header-link:hover,
@@ -61,10 +57,6 @@ body {
 
 /* -------Contacts------- */
 .header-contacts-link {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
 	color: #757575;
 }
 
@@ -73,7 +65,99 @@ body {
 	color: var(--accent-link-color);
 }
 
+/* -------Hero------- */
+.hero {
+	background: var(--hero-footer-bg-color)
+}
 
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+ 
+.hero-button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+
+	color: #FFFFFF;
+	background: #2196F3;
+
+	cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	background-color: #188CE8;
+}
+
+/* -------Features------- */ 
+.features-main-title {
+	display: none;
+}
+
+.features-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--secondary-text-color);
+}
+
+.features-item-text {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
+
+/* -------Works------- */
+.works-title {
+	color: var(--secondary-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.67;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+/* -------Team------- */
+.team {
+	background-color: var(--secondary-bg-color);
+}
+
+.team-title {
+	color: var(--secondary-text-color);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.team-item-title {
+	color: var(--secondary-text-color);
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+
+.team-item-text {
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
 
 /* -------Footer------- */
 .footer {
@@ -86,17 +170,12 @@ body {
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+
+	color: #ffffff;
+}
+
+.footer-logo .accent {
 	color: #2196F3;
-}
-
-.footer-logo-studio {
-	color: #FFFFFF;
-}
-
-/* !   Не работает ховер и фокус */
-.footer-logo:hover,
-.footer-logo:focus {
-	color: var(--accent-link-color);
 }
 
 .footer-address,
@@ -104,6 +183,7 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+
 	color: #FFFFFF;
 }
 
@@ -112,11 +192,18 @@ body {
 }
 
 .footer-address:hover,
-.footer-address:focus {
+.footer-address:focus,
+.footer-contacts-link:hover,
+.footer-contacts-link:focus{
 	color: var(--accent-link-color);
 }
 
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-	color: var(--accent-link-color);
+/* -------Portfolio------- */
+.portfolio {
+	background-color: var(--main-bg-color);
 }
+
+.portfolio-main-title {
+	display: none;
+}
+
