@@ -121,13 +121,13 @@ body {
 
 /* -------Works------- */
 .works-title {
-	color: var(--secondary-text-color);
-
-	font-weight: 700;
+		font-weight: 700;
 	font-size: 36px;
 	line-height: 1.67;
 	text-align: center;
 	letter-spacing: 0.03em;
+
+	color: var(--secondary-text-color);
 }
 
 /* -------Team------- */
@@ -136,21 +136,21 @@ body {
 }
 
 .team-title {
-	color: var(--secondary-text-color);
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
 }
 
 .team-item-title {
-	color: var(--secondary-text-color);
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+
+	color: var(--secondary-text-color);
 }
 
 .team-item-text {
@@ -199,11 +199,41 @@ body {
 }
 
 /* -------Portfolio------- */
-.portfolio {
-	background-color: var(--main-bg-color);
-}
-
 .portfolio-main-title {
 	display: none;
 }
 
+/* -------Navigation by sections Portfolio------- */
+.portfolio-button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	background-color: var(--secondary-bg-color);
+	color: #212121;
+
+	cursor: pointer;
+}
+
+.portfolio-button.active {
+	color: #FFFFFF;
+	background-color: var(--accent-link-color);
+}
+
+/* -------Portfolio Work examples------- */
+.examples-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2.0;
+	letter-spacing: 0.06em;
+
+	color: var(--secondary-text-color);
+}
+
+.examples-text {
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.03em;
+}
