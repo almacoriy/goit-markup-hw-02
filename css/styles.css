@@ -178,6 +178,10 @@ body {
     color: #2196F3;
 }
 
+.footer-list {
+    font-style: normal;
+}
+
 .footer-address,
 .footer-contacts-link {
     font-size: 14px;
@@ -237,4 +241,6 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+
+    color: var(--main-text-color);
 }
