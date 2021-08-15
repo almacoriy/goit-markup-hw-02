@@ -217,9 +217,10 @@ body {
 	cursor: pointer;
 }
 
-.portfolio-button.active {
-	color: #FFFFFF;
+.portfolio-button:hover,
+.portfolio-button:focus {
 	background-color: var(--accent-link-color);
+	color: #ffffff;
 }
 
 /* -------Portfolio Work examples------- */
